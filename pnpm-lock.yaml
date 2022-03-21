@@ -5,9 +5,11 @@ specifiers:
   '@emotion/react': ^11
   '@emotion/styled': ^11
   '@feature-sliced/eslint-config': ^0.1.0-beta.6
+  '@storybook/addon-a11y': ^6.4.19
   '@storybook/addon-actions': ^6.4.19
   '@storybook/addon-essentials': ^6.4.19
   '@storybook/addon-links': ^6.4.19
+  '@storybook/addon-measure': ^6.4.19
   '@storybook/react': ^6.4.19
   '@storybook/testing-library': ^0.0.9
   '@testing-library/jest-dom': ^5.16.2
@@ -61,9 +63,11 @@ dependencies:
 
 devDependencies:
   '@feature-sliced/eslint-config': 0.1.0-beta.6_808f2be9651018575e9510d3fccfe32f
+  '@storybook/addon-a11y': 6.4.19_4211ed8b26069fec1bc8ff4659f40efc
   '@storybook/addon-actions': 6.4.19_4211ed8b26069fec1bc8ff4659f40efc
   '@storybook/addon-essentials': 6.4.19_e78fe774c89741ab499193200c9db65a
   '@storybook/addon-links': 6.4.19_react-dom@17.0.2+react@17.0.2
+  '@storybook/addon-measure': 6.4.19_4211ed8b26069fec1bc8ff4659f40efc
   '@storybook/react': 6.4.19_e22601322d4b6050a8b490ab5f123b08
   '@storybook/testing-library': 0.0.9_react-dom@17.0.2+react@17.0.2
   '@testing-library/jest-dom': 5.16.2
@@ -3158,6 +3162,39 @@ packages:
     resolution: {integrity: sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==}
     dependencies:
       '@sinonjs/commons': 1.8.3
+    dev: true
+
+  /@storybook/addon-a11y/6.4.19_4211ed8b26069fec1bc8ff4659f40efc:
+    resolution: {integrity: sha512-dG6easap6W4AqyggVZPq8lBrhza8StA8J4eYz/GVdoXINSGtq/casV0rkmY3+SUXhPYux5oGavHo86j5I4Q/0Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@storybook/addons': 6.4.19_react-dom@17.0.2+react@17.0.2
+      '@storybook/api': 6.4.19_react-dom@17.0.2+react@17.0.2
+      '@storybook/channels': 6.4.19
+      '@storybook/client-logger': 6.4.19
+      '@storybook/components': 6.4.19_4211ed8b26069fec1bc8ff4659f40efc
+      '@storybook/core-events': 6.4.19
+      '@storybook/csf': 0.0.2--canary.87bc651.0
+      '@storybook/theming': 6.4.19_react-dom@17.0.2+react@17.0.2
+      axe-core: 4.4.1
+      core-js: 3.21.1
+      global: 4.4.0
+      lodash: 4.17.21
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-sizeme: 3.0.2
+      regenerator-runtime: 0.13.9
+      ts-dedent: 2.2.0
+      util-deprecate: 1.0.2
+    transitivePeerDependencies:
+      - '@types/react'
     dev: true
 
   /@storybook/addon-actions/6.4.19_4211ed8b26069fec1bc8ff4659f40efc:
